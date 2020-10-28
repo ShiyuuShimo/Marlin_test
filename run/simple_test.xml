@@ -1,0 +1,20 @@
+<marlin>
+	<execute>
+  	  <processor name="test"/>
+	</execute>
+	
+	<global>
+		<parameter name="LCIOInputFiles">
+          test_Pnnh.eL.pR.slcio 
+		</parameter>
+		<parameter name="MaxRecordNumber" value="10" />  
+		<parameter name="SkipNEvents" value="0" />  
+		<parameter name="SupressCheck" value="false" />  
+		<parameter name="Verbosity" options="DEBUG0-4,MESSAGE0-4,WARNING0-4,ERROR0-4,SILENT">SILENT</parameter> 
+	</global>
+
+    <processor name="test" type="MyProcessor">
+    </processor>
+
+</marlin>
+
